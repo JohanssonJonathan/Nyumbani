@@ -18,13 +18,12 @@ window.addEventListener("load", function(){
 
     var scrollPos = window.scrollY || window.scrollTop || document.getElementsByTagName("html")[0].scrollTop;
 
-    console.log(window.innerHeight)
-    console.log(scrollPos)
-
-    if(scrollPos === grans){
+    let scrollMax = Math.trunc(scrollPos)
+    let gransen = grans -1
+    console.log(grans - 1)
+    if(scrollMax == grans || scrollMax === grans -1){
       footer.style.height = "100px"
-    }else if( scrollPos < grans){
-
+    }else if( scrollMax < grans){
       footer.style.height = "0px"
     }
   })
