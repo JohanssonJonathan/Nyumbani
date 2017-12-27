@@ -21,7 +21,6 @@ window.addEventListener("load", function(){
       footer.style.height = "0px"
     }
     if(scrollPos === grans){
-      alert("hej")
       footer.style.height = "100px"
     }
   })
