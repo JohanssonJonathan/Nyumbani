@@ -4,6 +4,8 @@ window.addEventListener("load", function(){
 
 
   let footer = document.getElementById("footer");
+  let instagram = document.getElementById("instagram")
+  let facebook = document.getElementById("facebook")
 
 
 
@@ -22,9 +24,13 @@ window.addEventListener("load", function(){
     let gransen = grans -1
     console.log(grans - 1)
     if(scrollMax == grans || scrollMax === grans -1){
-      footer.style.height = "100px"
+      footer.style.height = "70px"
+      instagram.style.height ="50px"
+      facebook.style.height = "50px"
     }else if( scrollMax < grans){
       footer.style.height = "0px"
+      instagram.style.height ="0px"
+      facebook.style.height = "0px"
     }
   })
 

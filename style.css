@@ -134,9 +134,30 @@ main div h3 {
   transition-property: height;
   transition-duration: 0.5s;
   height: 0px;
-  background: red;
+  background: rgba(255,255,255,0.3);
+  box-shadow: 5px 0px 20px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+#footer img{
+  margin:5px;
+}
+
+#instagram{
+  width:50px;
+  height:0px;
+  transition-property: height;
+  transition-duration: 0.5s;
+}
+
+#facebook{
+  width:50px;
+  height:0px;
+  transition-property: height;
+  transition-duration: 0.5s;
+}
 
 
 /* BIG SCREEEN */
@@ -175,6 +196,7 @@ main div h3 {
 
   }
 
+
 }
 
 
@@ -194,31 +216,38 @@ main div h3 {
 
   }
 
-  header{
-    border-bottom: 20px solid black;
-  }
 
-  section nav{
-
-    position: fixed;
-
-  }
 
   section a {
-    padding:5px;
   }
 
 }
 
 
+
+
+
 @media (min-width:700px){
 
 
+  header{
+    border-bottom: 10px solid black;
+  }
 
+  section nav{
+
+  position: fixed;
+  z-index: 100;
+  }
+
+  main > div {
+    position: relative;
+    top:50px;
+  }
 
   main  {
     margin:0;
-    height: 950px;
+    height: 800px;
     width:100%;
     background: url(Bilder/Nyumbaniskate/flicka.png);
     background-repeat: no-repeat;
@@ -229,6 +258,10 @@ main div h3 {
     align-items: center;
 
   }
+  main > div{
+
+  }
+
 
 }
 
