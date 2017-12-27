@@ -61,6 +61,7 @@ header img:hover{
 
 section {
   font-family: arial;
+  position: relative;
 
 }
 
@@ -104,7 +105,7 @@ main  {
 display: flex;
   flex-direction: column;
   align-items: center;
-
+  position: relative;
 }
 
 
@@ -128,10 +129,12 @@ main div h3 {
 
 #footer{
   position: absolute;
-  bottom:0;
-  left:0;
-  right: 0;
-
+  bottom: 0;
+  width: 100%;
+  transition-property: height;
+  transition-duration: 0.5s;
+  height: 0px;
+  background: red;
 }
 
 
