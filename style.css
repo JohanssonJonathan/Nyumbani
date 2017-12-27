@@ -11,6 +11,19 @@ body{
   color:rgba(255,255,255,0.6)
 }
 
+ #current{
+color:rgb(89, 39, 54)
+}
+
+a{
+
+  transition-property: color, transform;
+  transition-duration: 0.2s;
+  }
+ a:hover {
+   color:rgba(89, 39, 54,0.7);
+   transform:rotate(4deg);
+}
 
 header{
 
@@ -51,11 +64,6 @@ section {
 
 }
 
-section nav{
-
-  display: flex;
-
-}
 section nav{
   display: flex;
   background: black;
@@ -112,6 +120,17 @@ main div{
 main div h3 {
 
   padding:5px;
+  margin-bottom: 5px
+  border-bottom:rgba(89, 39, 54,0.7) solid 2px;
+
+
+}
+
+#footer{
+  position: absolute;
+  bottom:0;
+  left:0;
+
 }
 
 
@@ -171,14 +190,31 @@ main div h3 {
 
   }
 
+  header{
+    border-bottom: 20px solid black;
+  }
+
+  section nav{
+
+    position: fixed;
+
+  }
+
+  section a {
+    padding:5px;
+  }
+
 }
 
 
 @media (min-width:700px){
 
+
+
+
   main  {
     margin:0;
-    height: 750px;
+    height: 950px;
     width:100%;
     background: url(Bilder/Nyumbaniskate/flicka.png);
     background-repeat: no-repeat;
