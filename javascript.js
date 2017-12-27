@@ -17,11 +17,12 @@ window.addEventListener("load", function(){
 
     console.log(window.innerHeight)
     console.log(scrollPos)
-    if(scrollPos === grans -1){
-      footer.style.height = "0px"
-    }
+
     if(scrollPos === grans){
       footer.style.height = "100px"
+    }else if( scrollPos < grans){
+
+      footer.style.height = "0px"
     }
   })
 
