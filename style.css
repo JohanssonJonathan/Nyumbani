@@ -137,27 +137,44 @@ main div h3 {
   background: rgba(255,255,255,0.3);
   box-shadow: 5px 0px 20px black;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  justify-content: start;
+
+}
+#footer a{
+  width:60px;;
+  display: flex;
+  padding:0;
+
 }
 
-#footer img{
-  margin:5px;
+#footer a:first-child{
+  margin-left:20px;
+
+}
+
+#footer h3{
+  align-self: center;
+  color:rgba(255,255,255,0.5);
 }
 
 #instagram{
   width:50px;
   height:0px;
-  transition-property: height;
-  transition-duration: 0.5s;
+  transition-property: height, transform;
+  transition-duration: 0.5s, 0.5s;
+  margin:0
 }
 
 #facebook{
   width:50px;
   height:0px;
-  transition-property: height;
-  transition-duration: 0.5s;
-}
+  transition-property: height, transform;
+  transition-duration: 0.5s, 0.5s;
+  margin:0
+;}
+
+
 
 
 /* BIG SCREEEN */
@@ -197,6 +214,10 @@ main div h3 {
   }
 
 
+
+
+
+
 }
 
 
@@ -228,7 +249,9 @@ main div h3 {
 
 
 @media (min-width:700px){
-
+  main > div {
+    display: flex;
+  }
 
   header{
     border-bottom: 10px solid black;

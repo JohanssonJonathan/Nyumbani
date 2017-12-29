@@ -27,6 +27,8 @@ window.addEventListener("load", function(){
       footer.style.height = "70px"
       instagram.style.height ="50px"
       facebook.style.height = "50px"
+  
+
     }else if( scrollMax < grans){
       footer.style.height = "0px"
       instagram.style.height ="0px"
