@@ -19,6 +19,7 @@ body{
 }
 .contentBlock{
   display: flex;
+  justify-content: center;
 }
 
 .contentNone {
@@ -74,9 +75,30 @@ header img:hover{
   padding: 0;
   margin:0 auto;
   display: block;
-
 }
 
+
+
+#infoDavid > div img {
+  width:30px;
+  height: 30px;
+  opacity: 0.7;
+  display: inline-block;
+  border-radius: 0;
+}
+
+#infoJonte > div img {
+  border-radius: 0;
+  opacity: 0.7;
+  width:30px;
+  height: 30px;
+  display: inline-block;
+}
+
+
+
+
+#content3{}
 
 #content3 > div {
   display: flex;
@@ -87,10 +109,12 @@ header img:hover{
 .info{
   display: flex;
   justify-content: center;
+
 }
 
 .info h1{
   margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 
@@ -151,7 +175,7 @@ main div{
   width:90%;
   margin:auto;
   padding:0px;
-  font-size: 0.8em;
+  font-size: 0.9em;
   margin:0;
   margin-top:20px;
 }
@@ -233,6 +257,9 @@ main div h3 {
 
   }
 
+
+
+
 }
 
 @media (min-width:550px){
@@ -263,6 +290,7 @@ main div h3 {
 
   main  {
     margin:0;
+    padding:0;
     height: 700px;
     width:100%;
     background: url(Bilder/Nyumbaniskate/flicka.png);
@@ -275,7 +303,9 @@ main div h3 {
 
   }
 
-
+#content3 img{
+  width: 150px;
+}
 
   section a {
   }
@@ -287,6 +317,18 @@ main div h3 {
 
 
 @media (min-width:700px){
+
+  #content3 > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-direction: row;
+  }
+
+  .info{
+    flex-direction: column;
+  }
+
   main > div {
     display: flex;
   }
@@ -358,13 +400,13 @@ main div h3 {
 
     flex-direction: row;
     align-items: start;
+    justify-content: center;
   }
 
 
   main div{
     width:90%;
     margin:auto;
-    padding:50px;
     font-size: 1em;
     margin:0;
     margin-top:20px;

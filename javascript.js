@@ -3,6 +3,8 @@ window.addEventListener("load", function(){
 
 
 
+
+
   let footer = document.getElementById("footer");
   let instagram = document.getElementById("instagram")
   let facebook = document.getElementById("facebook")
@@ -20,8 +22,8 @@ window.addEventListener("load", function(){
   content3.className ="contentNone"
 
   window.addEventListener("click",function(e){
-      e.preventDefault()
     if(e.target === about){
+      e.preventDefault()
 
       about.className ="current";
       contact.className ="";
@@ -35,6 +37,8 @@ window.addEventListener("load", function(){
     }
     if(e.target === photos){
 
+      e.preventDefault()
+
       about.className ="";
       contact.className ="";
       photos.className ="current";
@@ -45,6 +49,8 @@ window.addEventListener("load", function(){
     }
 
     if(e.target === contact){
+
+      e.preventDefault()
 
       about.className ="";
       contact.className ="current";
