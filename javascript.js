@@ -1,6 +1,33 @@
 window.addEventListener("load", function(){
 
+  let headerBilder = ["_MG_9436.jpg","_Safari_113.jpg","_Safari_548.jpg","_Safari_591.jpg","elefant2.png"]
 
+  let header = document.getElementsByTagName("header")[0];
+
+  let logga = document.getElementById("logga")
+
+  let i =0;
+let interval =  setInterval(function(){
+
+
+
+
+      header.style.background = (`url(Bilder/Nyumbaniskate/${headerBilder[i]})`);
+
+      header.style.backgroundRepeat = "no-repeat";
+      header.style.backgroundPosition = "center 0";
+      header.style.backgroundSize = "100%";
+
+
+      if(headerBilder.length - 1 === i ){
+        i=0
+      }else{
+        i++
+      }
+
+
+
+  },5000)
 
 
 

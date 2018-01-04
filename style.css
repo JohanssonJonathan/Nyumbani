@@ -37,13 +37,14 @@ a{
 }
 
 header{
-
   background: url(Bilder/Nyumbaniskate/elefant2.png);
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: 100%;
   width:100%;
   border-top:10px solid black;
+  transition-property: opacity;
+  transition-duration: 0.5s;
 }
 
 
