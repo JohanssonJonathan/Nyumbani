@@ -11,8 +11,16 @@ body{
   color:rgba(255,255,255,0.6)
 }
 
- #current{
+
+
+
+#content2 li{
+  padding:0;
 }
+
+
+
+
 .current {
   color:rgb(89, 39, 54)
 
@@ -61,6 +69,7 @@ header img {
   opacity: 0.8;
   position: relative;
   z-index: 1;
+  transform: scale(0.7)
 }
 
 header img:hover{
@@ -81,8 +90,8 @@ header img:hover{
 
 
 #infoDavid > div img {
-  width:30px;
-  height: 30px;
+  width:15px;
+  height: 15px;
   opacity: 0.7;
   display: inline-block;
   border-radius: 0;
@@ -91,13 +100,16 @@ header img:hover{
 #infoJonte > div img {
   border-radius: 0;
   opacity: 0.7;
-  width:30px;
-  height: 30px;
+  width:15px;
+  height: 15px;
   display: inline-block;
 }
 
 
-
+#content1{
+  flex-direction: column;
+  margin-top: 0;
+}
 
 #content3{}
 
@@ -114,12 +126,43 @@ header img:hover{
 }
 
 .info h1{
-  margin-top: 20px;
+  margin-top: 0px;
   margin-bottom: 10px;
 }
+#content2{
 
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
+#content2 ul{
+    display: block;
+    height: 270px;
+    overflow: scroll;
+    justify-content: start;
+    flex-direction:column;
+}
 
+#content li {
+
+}
+#content2 img {
+  display: block;
+  margin:0 auto;
+  width:200px;;
+}
+
+/* Stor skärm */
+
+/* #content2 ul{
+    display: flex;
+    background: red;
+    width:900px;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction:row;
+} */
 
 
 section {
@@ -133,9 +176,9 @@ section nav{
   background: black;
   padding: 5px;
   box-shadow: 0px 0px 20px black;
+  justify-content: center;
 }
 section ul, section li, section a{
-  width:100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -289,6 +332,7 @@ main div h3 {
 
 @media (min-width:600px){
 
+
   main  {
     margin:0;
     padding:0;
@@ -308,8 +352,18 @@ main div h3 {
   width: 150px;
 }
 
-  section a {
-  }
+#infoDavid > div img {
+  width:30px;
+  height: 30px;
+
+}
+
+#infoJonte > div img {
+
+  width:30px;
+  height: 30px;
+
+}
 
 }
 
@@ -318,6 +372,19 @@ main div h3 {
 
 
 @media (min-width:700px){
+
+  #content2 ul{
+      display: flex;
+      overflow: visible;
+      width:900px;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction:row;
+  }
+
+  #content2 img {
+    margin:5px;
+  }
 
   #content3 > div {
     display: flex;
@@ -374,7 +441,6 @@ main div h3 {
 
 
   header img {
-
     padding-bottom: 50px;
     padding-top: 50px;
     width:30%;
@@ -388,9 +454,8 @@ main div h3 {
 
 
   section ul, section li{
-    width:50%;
 
-    flex-direction: row;
+    flex-direction: column;
 
 
   }

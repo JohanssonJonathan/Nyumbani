@@ -1,5 +1,7 @@
 window.addEventListener("load", function(){
 
+
+
   let headerBilder = ["_MG_9436.jpg","_Safari_113.jpg","_Safari_548.jpg","_Safari_591.jpg","elefant2.png"]
 
   let header = document.getElementsByTagName("header")[0];
