@@ -348,6 +348,16 @@ main div h3 {
 
   }
 
+  #content1 div {
+    padding:50px;
+  }
+
+  #content1{
+    flex-direction: row;
+    padding:10px;
+    margin-top: 0;
+  }
+
 #content3 img{
   width: 150px;
 }
@@ -384,6 +394,7 @@ main div h3 {
 
   #content2 img {
     margin:5px;
+    box-shadow: 0 0 5px rgba(255,255,255,0.6)
   }
 
   #content3 > div {
