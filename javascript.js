@@ -102,6 +102,7 @@ let interval =  setInterval(function(){
   content3.className ="contentNone"
 
   window.addEventListener("click",function(e){
+
     if(e.target === about){
       e.preventDefault()
 
@@ -109,12 +110,17 @@ let interval =  setInterval(function(){
       contact.className ="";
       photos.className ="";
 
+      content1.style.display ="flex"
+
+      content2.style.display ="none"
+      content3.style.display ="none";
         content1.className = "contentBlock";
         content2.className ="contentNone";
         content3.className = "contentNone"
 
 
     }
+
     if(e.target === photos){
 
       e.preventDefault()
@@ -123,9 +129,14 @@ let interval =  setInterval(function(){
       contact.className ="";
       photos.className ="current";
       content2.style.display ="flex"
+      content3.style.display ="none";
+      content1.style.display = "none"
+
+
       content2.className = "contentBlock";
       content1.className ="contentNone";
       content3.className = "contentNone"
+
     }
 
     if(e.target === contact){
@@ -135,7 +146,10 @@ let interval =  setInterval(function(){
       about.className ="";
       contact.className ="current";
       photos.className ="";
-      content3.style.display ="flex"
+      content3.style.display ="flex";
+      content2.style.display ="none"
+      content1.style.display = "none"
+
 
       content3.className = "contentBlock";
       content2.className ="contentNone";
