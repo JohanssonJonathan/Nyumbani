@@ -54,8 +54,13 @@ body{
   margin-top:20px;
 }
 
+#content2 {
+  display: none;
+}
 
-
+#content3{
+  display: none;
+}
 
 .current {
   color:rgb(89, 39, 54)

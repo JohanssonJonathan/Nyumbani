@@ -122,7 +122,7 @@ let interval =  setInterval(function(){
       about.className ="";
       contact.className ="";
       photos.className ="current";
-
+      content2.style.display ="flex"
       content2.className = "contentBlock";
       content1.className ="contentNone";
       content3.className = "contentNone"
@@ -135,6 +135,7 @@ let interval =  setInterval(function(){
       about.className ="";
       contact.className ="current";
       photos.className ="";
+      content3.style.display ="flex"
 
       content3.className = "contentBlock";
       content2.className ="contentNone";
