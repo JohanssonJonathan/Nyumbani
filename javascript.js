@@ -5,12 +5,15 @@ window.addEventListener("load", function(){
 
   let storBild = document.getElementById("storBild")
   let diven = document.getElementsByClassName("storaBilder")[0];
+
+  let widthOnWindow = window.innerWidth;
+
+
   for(let i=0; i< image.length;i++){
 
     let bild = document.createElement("img");
 
     let x = 0;
-
 
       image[i].addEventListener("click", function(e){
 
@@ -21,6 +24,7 @@ window.addEventListener("load", function(){
 
       })
 
+
       diven.addEventListener("click",function(){
 
             diven.style.display = "none"
@@ -28,7 +32,7 @@ window.addEventListener("load", function(){
 
       })
 
-
+    
 
 
   }
