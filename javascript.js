@@ -39,7 +39,7 @@ window.addEventListener("load", function(){
 
 
 
-  let headerBilder = ["people.jpg","gnu.jpg","lejon.jpg","monkey.jpg","elefant2.png"]
+  let headerBilder = ["people.png","gnu.jpg","lejon.png","monkey.png","elefant2.png"]
 
   let header = document.getElementsByTagName("header")[0];
 
@@ -108,7 +108,7 @@ let interval =  setInterval(function(){
       about.className ="current";
       contact.className ="";
       photos.className ="";
-        
+
         content1.className = "contentBlock";
         content2.className ="contentNone";
         content3.className = "contentNone"
