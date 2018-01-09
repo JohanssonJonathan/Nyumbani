@@ -11,9 +11,41 @@ body{
   color:rgba(255,255,255,0.6)
 }
 
+.absolute{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top:0;
+  z-index: 2;
+  width:300px;
+  margin-top:50%;
+  box-shadow: 0 0 5px rgba(255,255,255,0.5);
+  display: block;
+}
 
 
+.storaBilder {
 
+  position: absolute;
+  width:100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  z-index: 5;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#storBild {
+
+}
+
+#storBild img {
+  width: 400px;
+
+}
 #content2 li{
   padding:0;
 }
@@ -26,6 +58,7 @@ body{
 
 }
 .contentBlock{
+  height: 300px;
   display: flex;
   justify-content: center;
 }
@@ -130,10 +163,10 @@ header img:hover{
   margin-bottom: 10px;
 }
 #content2{
-
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 
 #content2 ul{
@@ -394,7 +427,13 @@ main div h3 {
 
   #content2 img {
     margin:5px;
-    box-shadow: 0 0 5px rgba(255,255,255,0.6)
+    box-shadow: 0 0 5px rgba(255,255,255,0.6);
+    transition-property: transform;
+    transition-duration: 0.2s;
+  }
+
+  #content2 img:hover {
+    transform:rotate(5deg) scale(1.1);
   }
 
   #content3 > div {

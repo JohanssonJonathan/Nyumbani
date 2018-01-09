@@ -1,5 +1,38 @@
 window.addEventListener("load", function(){
 
+  let body = document.getElementsByTagName("body")[0]
+  let image = document.getElementsByClassName("productBild");
+
+  let storBild = document.getElementById("storBild")
+  let diven = document.getElementsByClassName("storaBilder")[0];
+  for(let i=0; i< image.length;i++){
+
+    let bild = document.createElement("img");
+
+    let x = 0;
+
+
+      image[i].addEventListener("click", function(e){
+
+          let splittad = e.srcElement.src.split("/")
+          bild.setAttribute("src","Bilder/Products/" + splittad[12]);
+          storBild.appendChild(bild)
+          diven.style.display = "flex";
+
+      })
+
+      diven.addEventListener("click",function(){
+
+            diven.style.display = "none"
+            storBild.innerHTML = "";
+
+      })
+
+
+
+
+  }
+
 
 
   let headerBilder = ["people.jpg","gnu.jpg","lejon.jpg","monkey.jpg","elefant2.png"]
@@ -9,8 +42,8 @@ window.addEventListener("load", function(){
   let logga = document.getElementById("logga")
 
   let i =0;
-let interval =  setInterval(function(){
 
+let interval =  setInterval(function(){
 
 
 
@@ -19,6 +52,7 @@ let interval =  setInterval(function(){
       header.style.backgroundRepeat = "no-repeat";
       header.style.backgroundPosition = "center 0";
       header.style.backgroundSize = "100%";
+
 
 
       if(headerBilder.length - 1 === i ){
@@ -106,7 +140,6 @@ let interval =  setInterval(function(){
 
     let scrollMax = Math.trunc(scrollPos)
     let gransen = grans -1
-    console.log(grans - 1)
     if(scrollMax == grans || scrollMax === grans -1){
       footer.style.height = "70px"
       instagram.style.height ="50px"
