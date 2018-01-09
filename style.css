@@ -158,9 +158,14 @@ header img:hover{
 }
 
 .info{
+  margin: 10px;
   display: flex;
   justify-content: center;
 
+}
+
+.davidOJonte {
+  margin:10px;
 }
 
 .info h1{
@@ -409,6 +414,10 @@ font-size: 0.7em;
   width: 150px;
 }
 
+#content3{
+  height: 400px;
+}
+
 #infoDavid > div img {
   width:30px;
   height: 30px;
@@ -455,11 +464,13 @@ font-size: 0.7em;
     justify-content: center;
     flex-direction: column;
     flex-direction: row;
+    margin:10px;
   }
 
   .info{
     flex-direction: column;
   }
+
 
   main > div {
     display: flex;
