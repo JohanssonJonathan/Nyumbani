@@ -108,7 +108,7 @@ let interval =  setInterval(function(){
       about.className ="current";
       contact.className ="";
       photos.className ="";
-
+        
         content1.className = "contentBlock";
         content2.className ="contentNone";
         content3.className = "contentNone"
