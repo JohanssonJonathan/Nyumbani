@@ -50,6 +50,10 @@ body{
   padding:0;
 }
 
+#clothes {
+  margin-top:20px;
+}
+
 
 
 
@@ -102,7 +106,8 @@ header img {
   opacity: 0.8;
   position: relative;
   z-index: 1;
-  transform: scale(0.7)
+  transform: scale(0.5) translateY(-50px);
+  opacity: 0.8;
 }
 
 header img:hover{

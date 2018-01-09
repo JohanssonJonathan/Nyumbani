@@ -32,7 +32,7 @@ window.addEventListener("load", function(){
 
       })
 
-    
+
 
 
   }
@@ -57,7 +57,20 @@ let interval =  setInterval(function(){
       header.style.backgroundPosition = "center 0";
       header.style.backgroundSize = "100%";
 
+      if(headerBilder[i] === "people.jpg"){
 
+        logga.style.opacity = "0"
+      }else{
+        logga.style.opacity = "1"
+      }
+
+      if(headerBilder[i] === "gnu.jpg"){
+
+          header.style.backgroundPosition = "center -100px"
+
+      }else{
+          header.style.backgroundPosition = "center 0";
+      }
 
       if(headerBilder.length - 1 === i ){
         i=0
