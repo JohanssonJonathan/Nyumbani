@@ -57,7 +57,7 @@ let interval =  setInterval(function(){
       header.style.backgroundPosition = "center 0";
       header.style.backgroundSize = "100%";
 
-      if(headerBilder[i] === "people.jpg"){
+      if(headerBilder[i] === "people.png"){
 
         logga.style.opacity = "0"
       }else{
