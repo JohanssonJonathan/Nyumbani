@@ -188,6 +188,7 @@ main div h3 {
   align-items: center;
   flex-direction: column;
   position: relative;
+  margin-top:0;
 }
 
 #content2 ul{
