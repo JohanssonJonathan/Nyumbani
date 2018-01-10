@@ -27,7 +27,7 @@ window.addEventListener("load", function(){
 
 
           let splittad = e.srcElement.src.split("/")
-          img.setAttribute("src","Bilder/Products/" + splittad[12]);
+          img.setAttribute("src","Bilder/Products/" + splittad[splittad.length -1]);
           console.log(splittad)
           console.log("Detta är e.srcElement.src " + e.srcElement.src)
           storBild.bild.appendChild(img)
