@@ -11,72 +11,10 @@ body{
   color:rgba(255,255,255,0.6)
 }
 
-.absolute{
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  top:0;
-  z-index: 2;
-  width:300px;
-  margin-top:50%;
-  box-shadow: 0 0 5px rgba(255,255,255,0.5);
-  display: block;
-}
-
-
-.storaBilder {
-
-  position: absolute;
-  width:100%;
-  height: 100vh;
-  background: rgba(0,0,0,0.5);
-  z-index: 5;
-  display: none;
-  justify-content: center;
-  align-items: center;
-}
-
-#storBild {
-
-}
-
-#storBild img {
-  width: 400px;
-
-}
-#content2 li{
-  padding:0;
-}
-
-#clothes {
-  margin-top:20px;
-}
-
-#content2 {
-  display: none;
-}
-
-#content3{
-  display: none;
-}
-
-.current {
-  color:rgb(89, 39, 54)
-
-}
-.contentBlock{
-  height: 300px;
-  display: flex;
-  justify-content: center;
-}
-
-.contentNone {
-  display: none;
-}
-
 a{
+  text-decoration: none;
+  color:rgba(255,255,255,0.4);
+  text-align: center;
 
   transition-property: color, transform;
   transition-duration: 0.2s;
@@ -84,6 +22,18 @@ a{
  a:hover {
    color:rgba(89, 39, 54,0.7);
    transform:rotate(4deg);
+}
+
+
+
+
+/*********************** HEADER *********
+*******************************************************
+**************************************************************************/
+
+.current {
+  color:rgb(89, 39, 54)
+
 }
 
 header{
@@ -120,97 +70,10 @@ header img:hover{
 
 }
 
-#content3 img{
-  width:100px;;
-  border-radius: 100%;
-  box-shadow: 0 0px 10px;
-  margin:0;
-  padding: 0;
-  margin:0 auto;
-  display: block;
-}
+/****************** SECTION ***************
+********************************************
+***********************************************************************/
 
-
-
-#infoDavid > div img {
-  width:15px;
-  height: 15px;
-  opacity: 0.7;
-  display: inline-block;
-  border-radius: 0;
-}
-
-#infoJonte > div img {
-  border-radius: 0;
-  opacity: 0.7;
-  width:15px;
-  height: 15px;
-  display: inline-block;
-}
-
-
-#content1{
-  flex-direction: column;
-  margin-top: 0;
-}
-
-#content3{}
-
-#content3 > div {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.info{
-  margin: 10px;
-  display: flex;
-  justify-content: center;
-
-}
-
-.davidOJonte {
-  margin:10px;
-}
-
-.info h1{
-  margin-top: 0px;
-  margin-bottom: 10px;
-}
-#content2{
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-}
-
-#content2 ul{
-    display: block;
-    height: 270px;
-    overflow: scroll;
-    justify-content: start;
-    flex-direction:column;
-}
-
-#content li {
-
-}
-#content2 img {
-  display: block;
-  margin:0 auto;
-  width:200px;;
-}
-
-/* Stor skärm */
-
-/* #content2 ul{
-    display: flex;
-    background: red;
-    width:900px;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction:row;
-} */
 
 
 section {
@@ -239,14 +102,36 @@ section li{
   padding: 5px;
 }
 
-a {
-  text-decoration: none;
-  color:rgba(255,255,255,0.4);
-  text-align: center;
+
+
+.storaBilder {
+
+  position: absolute;
+  width:100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  z-index: 5;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#innehall img {
+  width: 400px;
 
 }
 
 
+
+#clothes {
+  margin-top:20px;
+}
+
+
+
+/*  ********** MAIN  ********
+**********************************************
+*****************************************************/
 
 main  {
   margin:0;
@@ -283,6 +168,122 @@ main div h3 {
 
 
 }
+
+/**************CONTENT 1 *********************************/
+
+
+#content1{
+  flex-direction: column;
+  margin-top: 0;
+}
+
+/* ********** CONTENT 2 **********************************/
+
+#content2 {
+  display: none;
+}
+
+#content2{
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+#content2 ul{
+    display: block;
+    height: 270px;
+    overflow: scroll;
+    justify-content: start;
+    flex-direction:column;
+}
+
+#content2 img {
+  display: block;
+  margin:0 auto;
+  width:200px;;
+}
+
+/* ********** CONTENT 3 ****************************************/
+
+
+#content3{
+  display: none;
+}
+
+#content3 img{
+  width:100px;;
+  border-radius: 100%;
+  box-shadow: 0 0px 10px;
+  margin:0;
+  padding: 0;
+  margin:0 auto;
+  display: block;
+}
+
+
+#content3 > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+#infoDavid > div img {
+  width:15px;
+  height: 15px;
+  opacity: 0.7;
+  display: inline-block;
+  border-radius: 0;
+}
+
+#infoJonte > div img {
+  border-radius: 0;
+  opacity: 0.7;
+  width:15px;
+  height: 15px;
+  display: inline-block;
+}
+
+.info{
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.davidOJonte {
+  margin:10px;
+}
+
+.info h1{
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+
+
+/* Visar about, Products och contact för sig i javascript */
+.contentBlock{
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Tar bort ABOUT, Products och contact för sig i javascript */
+.contentNone {
+  display: none;
+}
+
+
+
+
+
+/***************** FOOTER ********************
+**************************************************
+*****************************************************/
+
 
 #footer{
   position: absolute;
@@ -334,7 +335,12 @@ main div h3 {
 
 
 
-/* BIG SCREEEN */
+/******************************* BIG SCREEN *******
+*******************************************************
+*********************************************************/
+
+
+/* 500 px SCREEN */
 
 @media (min-width:500px){
 
@@ -356,6 +362,8 @@ font-size: 0.7em;
 
 
 }
+
+/* 550px SCREEN */
 
 @media (min-width:550px){
 
@@ -380,12 +388,10 @@ font-size: 0.7em;
     border-bottom:2px solid rgba(255,255,255,0);
   }
 
-
-
-
-
 }
 
+
+/********* 600px SCREEN  ***************/
 
 @media (min-width:600px){
 
@@ -509,10 +515,6 @@ font-size: 0.7em;
     align-items: center;
 
   }
-  main > div{
-
-  }
-
 
 }
 
@@ -534,16 +536,11 @@ font-size: 0.7em;
 
 
   section ul, section li{
-
     flex-direction: column;
-
-
   }
 
 
   main  {
-
-
     flex-direction: row;
     align-items: start;
     justify-content: center;
