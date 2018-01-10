@@ -28,11 +28,12 @@ window.addEventListener("load", function(){
 
           let splittad = e.srcElement.src.split("/")
           img.setAttribute("src","Bilder/Products/" + splittad[12]);
-          console.log(e.srcElement.src)
+          console.log("Detta är splittad 12 " + splittad[12])
+          console.log("Detta är e.srcElement.src " + e.srcElement.src)
           storBild.bild.appendChild(img)
           storBild.content.style.display = "flex";
 
-          console.log(img)
+          console.log("Image bilden " + img)
 
 
       })
