@@ -228,7 +228,7 @@ main div h3 {
   flex-direction: column;
 }
 
-#content3 a {
+#infoDavid > div, #infoJonte > div{
   display: flex;
 }
 #infoDavid > div img {
