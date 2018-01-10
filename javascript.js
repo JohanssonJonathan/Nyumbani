@@ -29,6 +29,8 @@ window.addEventListener("load", function(){
           img.setAttribute("src","Bilder/Products/" + splittad[12]);
           storBild.bild.appendChild(img)
           storBild.content.style.display = "flex";
+          console.log(img)
+
 
       })
 

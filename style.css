@@ -228,7 +228,9 @@ main div h3 {
   flex-direction: column;
 }
 
-
+#content3 a {
+  display: flex;
+}
 #infoDavid > div img {
   width:15px;
   height: 15px;
