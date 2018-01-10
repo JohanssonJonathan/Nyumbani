@@ -25,10 +25,13 @@ window.addEventListener("load", function(){
 
       storBild.image[i].addEventListener("click", function(e){
 
+
           let splittad = e.srcElement.src.split("/")
           img.setAttribute("src","Bilder/Products/" + splittad[12]);
+          console.log(e.srcElement.src)
           storBild.bild.appendChild(img)
           storBild.content.style.display = "flex";
+
           console.log(img)
 
 
