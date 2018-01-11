@@ -72,7 +72,7 @@ let interval =  setInterval(function(){
 
 
       /* Fixar till Gnu bilden */
-(headerBilder[i] === "gnu.jpg") ? header.style.backgroundPosition = "center -100px" : header.style.backgroundPosition = "center 0";
+(headerBilder[i] === "gnu.jpg" && window.innerWidth > 650) ? header.style.backgroundPosition = "center -100px" : header.style.backgroundPosition = "center 0";
 
 
       /* För att bilderna ska gå runt och börja om igen. Ökar i eller sätter den till 0 för att börja om*/
