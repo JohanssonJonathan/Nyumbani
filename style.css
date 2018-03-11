@@ -37,7 +37,7 @@ a{
 }
 
 header{
-  background: url(Bilder/Nyumbaniskate/elefant2.png);
+  background: url(Bilder/Nyumbaniskate/elefant4.jpg);
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: 100%;
@@ -137,7 +137,7 @@ main  {
   margin:0;
   height: 450px;
   width:100%;
-  background: url(Bilder/Nyumbaniskate/flicka3.png);
+  background: url(Bilder/Nyumbaniskate/flickamobil.jpg);
   background-repeat: no-repeat;
   background-position:bottom;
   background-size: 120%;
@@ -351,7 +351,6 @@ main div h3 {
     margin:0;
     height: 550px;
     width:100%;
-    background: url(Bilder/Nyumbaniskate/flicka.png);
     background-repeat: no-repeat;
     background-position:bottom;
     background-size: 120%;
@@ -374,7 +373,6 @@ font-size: 0.7em;
     margin:0;
     height: 600px;
     width:100%;
-    background: url(Bilder/Nyumbaniskate/flicka.png);
     background-repeat: no-repeat;
     background-position:bottom;
     background-size: 120%;
@@ -404,7 +402,6 @@ font-size: 0.7em;
     padding:0;
     height: 700px;
     width:100%;
-    background: url(Bilder/Nyumbaniskate/flicka.png);
     background-repeat: no-repeat;
     background-position:bottom;
     background-size: 120%;
@@ -509,7 +506,7 @@ font-size: 0.7em;
     margin:0;
     height: 800px;
     width:100%;
-    background: url(Bilder/Nyumbaniskate/flicka.png);
+    background: url(Bilder/Nyumbaniskate/flicka4.jpg);
     background-repeat: no-repeat;
     background-position:bottom;
     background-size: 100%;

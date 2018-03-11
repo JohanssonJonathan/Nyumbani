@@ -49,7 +49,7 @@ window.addEventListener("load", function(){
 
   /* Byte Av BILD på headern var femte sekund. */
 
-  let headerBilder = ["people.png","gnu.jpg","lejon.png","monkey.png","elefant2.png"]
+  let headerBilder = ["people4.jpg","gnu4.jpg","lejon4.jpg","apa4.jpg","elefant4.jpg"]
 
   let header = document.getElementsByTagName("header")[0];
 
@@ -68,11 +68,11 @@ let interval =  setInterval(function(){
 
 
       /* Tar bort loggan när vi är på people bilden. För att kunna se ansiktena */
-      (headerBilder[i] === "people.png") ? logga.style.opacity = "0" : logga.style.opacity = "1";
+      (headerBilder[i] === "people4.jpg") ? logga.style.opacity = "0" : logga.style.opacity = "1";
 
 
       /* Fixar till Gnu bilden */
-(headerBilder[i] === "gnu.jpg" && window.innerWidth > 650) ? header.style.backgroundPosition = "center -100px" : header.style.backgroundPosition = "center 0";
+(headerBilder[i] === "gnu4.jpg" && window.innerWidth > 650) ? header.style.backgroundPosition = "center -100px" : header.style.backgroundPosition = "center 0";
 
 
       /* För att bilderna ska gå runt och börja om igen. Ökar i eller sätter den till 0 för att börja om*/
